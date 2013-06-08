@@ -2,7 +2,7 @@
     "name": "ronanguilloux/silexmarkdownserviceprovider",
     "type": "lib",
     "description": "Silex micro-framework Markdown service provider",
-    "keywords": ["markdown", "silex", "provider"],
+    "keywords": ["markdown", "silex", "service", "provider"],
     "homepage": "https://github.com/ronanguilloux/SilexMarkdownProvider",
     "license": "MIT",
     "authors": [{
