@@ -1,0 +1,21 @@
+{
+    "name": "ronanguilloux/silexmarkdownprovider",
+    "type": "lib",
+    "description": "Silex micro-framework Markdown service provider",
+    "keywords": ["markdown", "silex", "provider"],
+    "homepage": "https://github.com/ronanguilloux/SilexMarkdownProvider",
+    "license": "MIT",
+    "authors": [{
+        "name": "Ronan Guilloux",
+        "email": "ronan.guilloux@gmail.com"
+    }],
+    "require": {
+            "php": ">=5.3.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    }
+    "autoload": {
+        "psr-0": { "Rg": "src/" }
+    }
+}
