@@ -1,5 +1,5 @@
 {
-    "name": "ronanguilloux/silexmarkdownprovider",
+    "name": "ronanguilloux/silexmarkdownserviceprovider",
     "type": "lib",
     "description": "Silex micro-framework Markdown service provider",
     "keywords": ["markdown", "silex", "provider"],
