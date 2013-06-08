@@ -1,9 +1,10 @@
-SilexMarkdownServiceProvider
-============================
+Silex Markdown Service Provider
+===============================
 
-Silex micro-framework Markdown Service Provider
+[Silex PHP micro-framework](https://github.com/fabpot/silex/) Markdown Service Provider
 
-To be used with [michelf/php-markdown](https://github.com/michelf/php-markdown) PHP parser for Markdown and Markdown Extra derived from the original Markdown.pl by John Gruber
+To be used with [michelf/php-markdown](https://github.com/michelf/php-markdown) 
+PHP parser for Markdown and Markdown Extra derived from the original Markdown.pl by John Gruber
 
 Usage
 -----
