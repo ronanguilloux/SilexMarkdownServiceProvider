@@ -21,7 +21,7 @@ $app->register(new MarkdownServiceProvider(), array(
 );
 
 // Retrieve .md file content
-$markdown = $app['md.finder']->getContent($path-to-mardown-file);
+$markdown = $app['md.finder']->getContent('path-to-mardown-file');
 
 // Parse it into html
 $html = $app['md.parser']->transform($markdown);
