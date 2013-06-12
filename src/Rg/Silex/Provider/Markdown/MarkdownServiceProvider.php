@@ -8,7 +8,7 @@ namespace Rg\Silex\Provider\Markdown;
 
 use Silex\Application;
 use Silex\ServiceProviderInterface;
-use Michelf\MarkdownExtra;
+use Rg\Markdown\MarkdownExtended;
 use Rg\Markdown\Finder;
 use Rg\Twig\Extension\Markdown as Markdown;
 
@@ -36,7 +36,7 @@ class MarkdownServiceProvider implements ServiceProviderInterface
     public function register(Application $app)
     {
         $app['md.parser'] = $app->share(function () use ($app) {
-            return new MarkdownExtra();
+            return new MarkdownExtended();
         });
 
         $app['md.finder'] = $app->share(function () use ($app) {
