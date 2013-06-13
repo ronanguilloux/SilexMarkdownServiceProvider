@@ -6,6 +6,9 @@ Silex Markdown Service Provider
 To be used with Michel Fortin's [michelf/php-markdown](https://github.com/michelf/php-markdown) 
 PHP parser for Markdown and Markdown Extra derived from the original Markdown.pl by John Gruber
 
+[![Build Status](https://secure.travis-ci.org/ronanguilloux/SilexMarkdownServiceProvider.png?branch=master)](http://travis-ci.org/ronanguilloux/SilexMarkdownServiceProvider)
+[![Total Downloads](https://poser.pugx.org/ronanguilloux/SilexMarkdownServiceProvider/downloads.png)](https://packagist.org/packages/ronanguilloux/SilexMarkdownServiceProvider)
+
 Usage
 -----
 
