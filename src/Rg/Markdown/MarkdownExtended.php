@@ -24,7 +24,10 @@ class MarkdownExtended extends MarkdownExtra
 
     /**
      * getTitle
-     * Returns title (markdown "====" underlined label, parsed as h1
+     * Returns title
+     * from a markdown source
+     * eventually containing "====" underlined label,
+     * usually parsed as <h1>
      *
      * @param string $markdown
      *
@@ -34,7 +37,6 @@ class MarkdownExtended extends MarkdownExtra
     {
         $html = "<xml>" . self::transform($markdown) . "</xml>";
         $dom = new \DOMDocument;
-        $dom->preserveWhiteSpace = false;
         $dom->loadXml($html);
 
         return $dom->getElementsByTagName('h1')->item(0)->nodeValue;
