@@ -43,11 +43,12 @@ class MarkdownExtensionTest extends \PHPUnit_Framework_TestCase
             }
         });
         $request = Request::create('/');
-        $result = $app->handle($request);
+        $response = $app->handle($request);
+        $app->terminate($request, $response);
 
         $this->assertInstanceOf('\Michelf\MarkdownExtra', $app['md.parser']);
         $expected = $app['md.parser']->transform($app['md.finder']->getContent(1));
-        $this->assertContains($expected, $result->getContent());
+        $this->assertContains($expected, $response->getContent());
     }
 }
 ?>
