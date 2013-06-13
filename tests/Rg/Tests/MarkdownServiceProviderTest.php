@@ -43,9 +43,9 @@ class MarkdownExtensionTest extends \PHPUnit_Framework_TestCase
 
         $app = $this->app;
         $this->app->get('/', function() use($app) {
-            $markdown = $this->app['md.finder']->getContent(1);
+            $markdown = $app['md.finder']->getContent(1);
             if($markdown){
-                $html = $this->app['md.parser']->transform($markdown);
+                $html = $app['md.parser']->transform($markdown);
                 return $html;
             }
         });
