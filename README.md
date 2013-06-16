@@ -9,6 +9,11 @@ PHP parser for Markdown and Markdown Extra derived from the original Markdown.pl
 [![Build Status](https://secure.travis-ci.org/ronanguilloux/SilexMarkdownServiceProvider.png?branch=master)](http://travis-ci.org/ronanguilloux/SilexMarkdownServiceProvider)
 [![Total Downloads](https://poser.pugx.org/ronanguilloux/SilexMarkdownServiceProvider/downloads.png)](https://packagist.org/packages/ronanguilloux/SilexMarkdownServiceProvider)
 
+Implementations examples:
+
+* [SilexMarkdown demo website](https://github.com/ronanguilloux/SilexMarkdown) (github repository)
+
+
 Usage
 -----
 
