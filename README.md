@@ -36,6 +36,18 @@ $html = $app['md.parser']->transform($markdown);
 
 ```
 
+
+Tests
+-----
+
+Tests need --dev option while installing dependecing using composer:
+
+    $ composer.phar install --dev
+    $ wget http://pear.phpunit.de/get/phpunit.phar
+    $ chmod +x phpunit.phar
+    $ ./phpunit.phar
+
+
 License
 -------
 
