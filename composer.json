@@ -15,7 +15,7 @@
     },
      "require-dev": {
          "silex/silex": "*",
-         "twig/twig": ">=1.2.0",
+         "twig/twig": ">=1.2.0"
      },
      "autoload": {
         "psr-0": { "Rg": "src/" }
