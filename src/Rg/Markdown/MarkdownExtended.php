@@ -42,6 +42,3 @@ class MarkdownExtended extends MarkdownExtra
         return $dom->getElementsByTagName('h1')->item(0)->nodeValue;
     }
 }
-
-
-

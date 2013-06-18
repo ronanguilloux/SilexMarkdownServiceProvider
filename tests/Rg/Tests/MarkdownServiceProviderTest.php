@@ -42,10 +42,11 @@ class MarkdownExtensionTest extends \PHPUnit_Framework_TestCase
         );
 
         $app = $this->app;
-        $this->app->get('/', function() use($app) {
+        $this->app->get('/', function() use ($app) {
             $markdown = $app['md.finder']->getContent(1);
-            if($markdown){
+            if ($markdown) {
                 $html = $app['md.parser']->transform($markdown);
+
                 return $html;
             }
         });
@@ -65,6 +66,3 @@ class MarkdownExtensionTest extends \PHPUnit_Framework_TestCase
 
     }
 }
-
-?>
-

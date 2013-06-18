@@ -41,6 +41,7 @@ class MarkdownServiceProvider implements ServiceProviderInterface
 
         $app['md.finder'] = $app->share(function () use ($app) {
             $args = array('path' => ($app['md.path']) ? $app['md.path'] : null);
+
             return new Finder($args);
         });
     }
