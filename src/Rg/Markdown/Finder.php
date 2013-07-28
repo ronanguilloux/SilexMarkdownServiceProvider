@@ -89,6 +89,7 @@ class Finder
 
     /**
      * getList
+     * In the file list returned, in array values, '-' become spaces.
      *
      * @return array mardown file list
      */
@@ -99,7 +100,7 @@ class Finder
             $item = pathinfo($item);
             $item = $item['filename'];
             $item = preg_split("/^[\d-]+/", $item, 2, PREG_SPLIT_NO_EMPTY);
-            $list[$key] = ucfirst($item[0]);
+            $list[$key] = ucfirst(str_replace('-',' ',$item[0]));
         }
 
         return $list;
